@@ -1,6 +1,6 @@
 # css-coding-standard
 
-## Naming Conventions
+## 命名規格
 
 Always use hyphens in class names. Do not use underscores or CamelCase notation.
 
@@ -11,7 +11,7 @@ Always use hyphens in class names. Do not use underscores or CamelCase notation.
 .sec_nav
 .SecNav
 
-## Values
+## 值的寫法
 
 Always define generic font families like sans-serif or serif.
 
@@ -21,9 +21,9 @@ font-family: "ff-din-web-1", Arial, Helvetica, sans-serif;
 /* Wrong */
 font-family: "ff-din-web-1";
 Shorten hexidecimal color values to 3 digits when possible:
-
 background: #fff;
-Do not use unit with 0.
+
+## Do not use unit with 0.
 
 /* Correct */
 .nav a {
@@ -36,7 +36,7 @@ Do not use unit with 0.
 }
 Do not use default values if they are not necessary to override inherited values.
 
-## Selectors
+## 選擇器
 
 Selectors should be on a single line, with a space after the selector, followed by an opening brace. A selector should end with a closing brace on the next line. Next selector related the the previous one should be on the next line with one additional line space between them.
 
@@ -51,7 +51,7 @@ Avoid very complex child and descendant selectors like:
 .my-inbox .flyout-content .inner .message .inbox li div.take-action .actions ul li a {
 }
 
-## Multiple selectors
+## 多項選擇器
 
 Multiple selectors should each be on a single line, with no space after each comma.
 
@@ -59,7 +59,7 @@ Multiple selectors should each be on a single line, with no space after each com
 .faqs a.close {
 }
 
-## Properties
+## 屬性
 
 Every declaration should be on its own line below the opening brace. Each property should:
 
@@ -99,7 +99,7 @@ Where possible, group @include statements at the top of a declaration block, aft
   margin: 10px;
   padding: 10px;
 }
-## Comments
+## 註解
 
 Follow the comments style used in normalize.css. The comments blocks should be maximum of 80 characters wide.
 
