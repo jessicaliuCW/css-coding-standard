@@ -87,28 +87,6 @@ Use shorthand properties when possible.
 
 Order of properties can have the following structure: box model, typography and graphic layer or order properties alphabetically.
 
-## Properties with multiple values
-
-When properties can have multiple values, each value should be separated with a space.
-```css
-font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, lucida, sans-serif;
-Preprocessors
-```
-Limit nesting to 1 level deep. Reassess any nesting more than 2 levels deep. This prevents overly-specific CSS selectors.
-Avoid large numbers of nested rules. Break them up when readability starts to be affected. Preference to avoid nesting that spreads over more than 20 lines.
-Always place @extend statements on the first lines of a declaration block.
-Where possible, group @include statements at the top of a declaration block, after any @extend statements.
-
-```css
-.selector-1 {
-  @extend .other-rule;
-  @include clearfix();
-  @include box-sizing(border-box);
-  
-  margin: 10px;
-  padding: 10px;
-}
-```
 
 ## 註解
 
